@@ -6,7 +6,8 @@ function limit_words($string, $word_limit)
     return implode(' ', array_slice($words, 0, $word_limit));
 }
 
-function getNameDaySpanish($n) {
+function getNameDaySpanish($n)
+{
     switch ($n) {
         case 1:
             $n = 'LUNES';
@@ -36,7 +37,8 @@ function getNameDaySpanish($n) {
     return $n;
 }
 
-function getNameMonthSpanish($n) {
+function getNameMonthSpanish($n)
+{
     switch ($n) {
         case 1:
             $n = 'ENERO';
@@ -81,32 +83,11 @@ function getNameMonthSpanish($n) {
     return $n;
 }
 
-function addHttp($url) {
+function addHttp($url)
+{
     if (filter_var($url, FILTER_VALIDATE_URL) === false) {
         $url = "http://" . $url;
     }
-
+    
     return $url;
-}
-
-function cortarTexto($txt, $nr, $abrev = null) {
-    $tamano = $nr;
-    $contador = 0;
-    $texto = strip_tags($txt);
-    if ($texto != "") { // Cortamos la cadena por los espacios 
-        //$arrayTexto = split(' ',$texto);
-        if ($tamano >= strlen($texto)) {
-            return $texto;
-        } else {
-            $arrayTexto = explode(' ', $texto);
-            $texto = '';
-            // Reconstruimos la cadena 
-            while ($tamano >= strlen($texto) + strlen(@$arrayTexto[$contador])) {
-                $texto .= ' ' . @$arrayTexto[$contador];
-                $contador++;
-            }
-            return $texto . $abrev;
-        }
-    } else
-        return "Sin descripción";
 }
