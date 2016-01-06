@@ -12,8 +12,8 @@ WP Utils - Funciones de apoyo - Utilitarios
 
 == Description ==
 
-> WP Utils - Funciones de apoyo - Utilitarios, funciones basicas para todo desarrollador, como cortar texto por caracteres o palabras, agregar protocolo (http),
-mostrar dia y mes en español,      
+> WP Utils - Funciones de apoyo - Utilitarios, funciones basicas para todo desarrollador, como cortar texto palabras, agregar protocolo (http),
+mostrar dia y mes en español.      
 
 = Admins/Desarrolladores/Diseñadores =
  Este plugin trae consigo funciones que usualemente necesitamos en todo proyecto , aplicación o blog y que nos sirve de mucha ayuda.
