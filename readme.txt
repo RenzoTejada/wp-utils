@@ -4,7 +4,7 @@ Donate link: http://www.renzotejada.com/donar
 Tags: utils, cut, cortar, texto, day, month, mes, dia, dominio, http, wp, wordpress
 Requires at least: 4.4
 Tested up to: 4.4
-Stable tag: 1.2
+Stable tag: 1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -37,6 +37,9 @@ WP Utils requiere 5.3 a más
  
 
 == Changelog ==
+
+= 0.1.3 =
+Agregando el icon del plugins WP Utils
 
 = 0.1.2 =
 Agregando funcion de cortarTexto por la cantidad de caracteres y concatenar...

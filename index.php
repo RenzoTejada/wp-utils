@@ -1,13 +1,13 @@
 <?php
 /**
  * @package WP Utils
- * @version 1.2
+ * @version 1.3
  */
 /*
  * Plugin Name: WP Utils
  * Plugin URI: https://github.com/RenzoTejada/wp-utils
  * Description: WP Utils - Funciones de apoyo - Utilitarios, funciones basicas para todo desarrollador, como cortar texto palabras, agregar protocolo (http), mostrar dia y mes en español. 
- * Version: 1.2
+ * Version: 1.3
  * Author: Renzo Tejada
  * Author URI: http://renzotejada.com/
  * License: GPLv2
