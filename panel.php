@@ -58,6 +58,19 @@
 				</div>
 			</div>
 		</div>
+		<div id="dashboard_right_now" class="postbox">
+			<div class="inside">
+				<h3 class="main">Función cortarTexto</h3>
+				<div class="main">
+					<ul>
+						<li>cortarTexto : Corta una cadena de texto en una determinada cantidad de caracteres</li>
+						<li>Ej: <code>&lt;?php echo cortarTexto($txt,$nr,$abrev); ?></code></li>
+						<li>$txt : cadena de texto / $nr : número de caracteres</li>
+						<li> $abrev : texto a concatenar ej : '...' (no es obligatorio)</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 		<p id="wp-version-message">
 			<span id="wp-version">Plugin <?php echo \WP_Utils::TITLE;?> , desarrollador por <a
 				href="http://renzotejada.com/" target="_blank">Renzo Tejada</a>.

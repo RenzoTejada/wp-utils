@@ -91,3 +91,25 @@ function addHttp($url)
     
     return $url;
 }
+
+function cortarTexto($txt, $nr, $abrev = null)
+{
+    $tamano = $nr;
+    $contador = 0;
+    $texto = strip_tags($txt);
+    if ($texto != "") {
+        if ($tamano >= strlen($texto)) {
+            return $texto;
+        } else {
+            $arrayTexto = explode(' ', $texto);
+            $texto = '';
+            // Reconstruimos la cadena
+            while ($tamano >= strlen($texto) + strlen(@$arrayTexto[$contador])) {
+                $texto .= ' ' . @$arrayTexto[$contador];
+                $contador ++;
+            }
+            return $texto . $abrev;
+        }
+    } else
+        return "Sin descripción";
+}
