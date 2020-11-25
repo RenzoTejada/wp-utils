@@ -6,7 +6,7 @@
 /*
  * Plugin Name: WP Utils
  * Plugin URI: https://github.com/RenzoTejada/wp-utils
- * Description: WP Utils - Funciones de apoyo - Utilitarios, funciones basicas para todo desarrollador, como cortar texto palabras, agregar protocolo (http), mostrar dia y mes en español. 
+ * Description: WP Utils - Funciones de apoyo - Utilitarios, funciones basicas para todo desarrollador, como cortar texto palabras, agregar protocolo (http), mostrar dia y mes en español.
  * Version: 1.4
  * Author: Renzo Tejada
  * Author URI: https://renzotejada.com/
@@ -16,8 +16,7 @@ include 'functions.php';
 
 class WP_Utils
 {
-
-    CONST TITLE = 'WP Utils';
+    const TITLE = 'WP Utils';
 
     private static $instance;
 
@@ -48,7 +47,7 @@ class WP_Utils
             $wp_utils_options['url'] = $_POST['url'];
             update_option('$wp_utils_options', $wp_utils_options);
         }
-        include ('panel.php');
+        include('panel.php');
     }
 
     public function InitPlugin()
@@ -66,6 +65,3 @@ class WP_Utils
 
 $plugin = WP_Utils::get_instance();
 $plugin->InitPlugin();
-
-
-
