@@ -2,9 +2,9 @@
 Contributors: Renzo Tejada
 Donate link: http://www.renzotejada.com/donar
 Tags: utils, cut, cortar, texto, day, month, mes, dia, dominio, http, wp, wordpress
-Requires at least: 4.4
-Tested up to: 4.4
-Stable tag: 1.4
+Requires at least: 5.2.2
+Tested up to: 5.2.2
+Stable tag: 1.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -38,6 +38,9 @@ WP Utils requiere 5.3 a más
  
 
 == Changelog ==
+
+= 0.1.5 =
+Actualizando descripción y agregando nuevo metodo addHttps
 
 = 0.1.4 =
 Actualizando descripción

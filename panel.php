@@ -60,6 +60,19 @@
 		</div>
 		<div id="dashboard_right_now" class="postbox">
 			<div class="inside">
+				<h3 class="main">Función addHttps</h3>
+				<div class="main">
+					<ul>
+						<li>addHttps : Agregar el https a los dominio o url</li>
+						<li>Ej: <code>&lt;?php echo addHttps(url); ?></code></li>
+						<li>$url : url con protocolo (https)</li>
+						<li></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="dashboard_right_now" class="postbox">
+			<div class="inside">
 				<h3 class="main">Función cortarTexto</h3>
 				<div class="main">
 					<ul>
@@ -73,7 +86,7 @@
 		</div>
 		<p id="wp-version-message">
 			<span id="wp-version">Plugin <?php echo \WP_Utils::TITLE;?> , desarrollador por <a
-				href="http://renzotejada.com/" target="_blank">Renzo Tejada</a>.
+				href="https://renzotejada.com/" target="_blank">Renzo Tejada</a>.
 			</span>
 		</p>
 		<p></p>

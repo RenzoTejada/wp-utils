@@ -9,7 +9,7 @@
  * Description: WP Utils - Funciones de apoyo - Utilitarios, funciones basicas para todo desarrollador, como cortar texto palabras, agregar protocolo (http), mostrar dia y mes en español. 
  * Version: 1.4
  * Author: Renzo Tejada
- * Author URI: http://renzotejada.com/
+ * Author URI: https://renzotejada.com/
  * License: GPLv2
  */
 include 'functions.php';
