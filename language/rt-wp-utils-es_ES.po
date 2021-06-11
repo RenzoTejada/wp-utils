@@ -1,0 +1,184 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Utils para WooCommerce y WordPress\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-11 20:45+0000\n"
+"PO-Revision-Date: 2021-06-11 21:52+0000\n"
+"Last-Translator: \n"
+"Language-Team: Español de Perú\n"
+"Language: es_PE\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.2; wp-5.7.2\n"
+"X-Domain: rt-wp-utils"
+
+#: rt_utils_admin.php:158
+msgid "(not obligatory)"
+msgstr "(no es obligatorio)"
+
+#: rt_utils_admin.php:125
+msgid "Add http to domains or urls"
+msgstr "Añadir http a los dominios o urls"
+
+#: rt_utils_admin.php:124
+msgid "addHttp"
+msgstr "addHttp"
+
+#: rt_utils_admin.php:138
+msgid "addHttps"
+msgstr "addHttps"
+
+#: rt_utils_admin.php:139
+msgid "Adding https to domains or urls"
+msgstr "Añadir https a los dominios o urls"
+
+#: rt_utils_admin.php:152
+msgid "cortarTexto"
+msgstr "cortarTexto"
+
+#: rt_utils_admin.php:153
+msgid "Cuts a text string into a certain number of characters."
+msgstr "Corta una cadena de texto en un número determinado de caracteres."
+
+#: rt_utils_admin.php:81
+msgid "Cuts a text string into a certain number of words number of words"
+msgstr "Corta una cadena de texto en un número determinado de palabras"
+
+#: rt_utils_admin.php:99
+msgid "DATE OF DAY"
+msgstr "FECHA DEL DÍA"
+
+#: rt_utils_admin.php:49 wp-utils.php:52
+msgid "Docs"
+msgstr "Docs"
+
+#: rt_utils_admin.php:72
+msgid "Docs Utils"
+msgstr "Docs Utils"
+
+#: rt_utils_admin.php:121
+msgid "Functions addHttp"
+msgstr "Funciones addHttp"
+
+#: rt_utils_admin.php:135
+msgid "Functions addHttps"
+msgstr "Funciones addHttps"
+
+#: rt_utils_admin.php:149
+msgid "Functions cortarTexto"
+msgstr "Funciones cortarTexto"
+
+#: rt_utils_admin.php:93
+msgid "Functions getNameDaySpanish"
+msgstr "Funciones getNameDaySpanish"
+
+#: rt_utils_admin.php:107
+msgid "Functions getNameMonthSpanish"
+msgstr "Funciones getNameDaySpanish"
+
+#: rt_utils_admin.php:77
+msgid "Functions limit_words"
+msgstr "Funciones limit_words"
+
+#: rt_utils_admin.php:96
+msgid "getNameDaySpanish"
+msgstr "getNameDaySpanish"
+
+#: rt_utils_admin.php:110
+msgid "getNameMonthSpanish"
+msgstr "getNameMonthSpanish"
+
+#. Author URI of the plugin
+msgid "https://renzotejada.com/"
+msgstr "https://renzotejada.com/"
+
+#. URI of the plugin
+msgid "https://renzotejada.com/wp-utils/"
+msgstr "https://renzotejada.com/wp-utils/"
+
+#: rt_utils_admin.php:80
+msgid "limit_words"
+msgstr "limit_words"
+
+#: rt_utils_admin.php:156
+msgid "number of characters"
+msgstr "número de caracteres"
+
+#: rt_utils_admin.php:113
+msgid "number of the month"
+msgstr "número del mes"
+
+#: rt_utils_admin.php:86
+msgid "number of words to be displayed (whole number)"
+msgstr "número de palabras a mostrar (número entero)"
+
+#. Author of the plugin
+msgid "Renzo Tejada"
+msgstr "Renzo Tejada"
+
+#: rt_utils_admin.php:97
+#, fuzzy
+#| msgid "Returns the name of the day in English"
+msgid "Returns the name of the day in Spanish"
+msgstr "Devuelve el nombre del día en Español"
+
+#: rt_utils_admin.php:111
+#, fuzzy
+#| msgid "Returns the name of the month in English"
+msgid "Returns the name of the month in Spanish"
+msgstr "Devuelve el nombre del mes en Español"
+
+#: rt_utils_admin.php:240
+msgid "Save Changes"
+msgstr "Guardar cambios"
+
+#: rt_utils_admin.php:171
+msgid "Setting"
+msgstr "Ajuste"
+
+#: rt_utils_admin.php:21 rt_utils_admin.php:53 wp-utils.php:61
+msgid "Settings"
+msgstr "Ajustes"
+
+#: wp-utils.php:53
+msgid "Support"
+msgstr "Soporte"
+
+#. Description of the plugin
+msgid "Support functions - Utilities, essential functions."
+msgstr "Funciones de apoyo - Utilidades, funciones esenciales."
+
+#: rt_utils_admin.php:155
+msgid "text string"
+msgstr "cadena de texto"
+
+#: rt_utils_admin.php:85
+msgid "text string "
+msgstr "cadena de texto"
+
+#: rt_utils_admin.php:157
+msgid "text to concatenate"
+msgstr "texto a concatenar"
+
+#: rt_utils_admin.php:141
+msgid "url with protocol (https)"
+msgstr "url con protocolo (https)"
+
+#: rt_utils_admin.php:127
+msgid "url without protocol (http)"
+msgstr "url sin protocolo (http)"
+
+#: rt_utils_admin.php:20
+msgid "Utils"
+msgstr "Utils"
+
+#. Name of the plugin
+msgid "Utils para WooCommerce y WordPress"
+msgstr "Utils para WooCommerce y WordPress"
+
+#: rt_utils_admin.php:43
+msgid "WP Utils"
+msgstr "WP Utils"

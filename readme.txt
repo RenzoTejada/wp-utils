@@ -1,10 +1,9 @@
 === WP Utils ===
 Contributors: renzotejada
-Donate link: http://www.renzotejada.com/donar
 Tags: utils, cut, cortar, texto, day, month, mes, dia, dominio, http, wp, wordpress
-Requires at least: 5.2.2
-Tested up to: 5.6
-Stable tag: 1.5
+Requires at least: 5.2
+Tested up to: 5.5.3
+Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -19,8 +18,6 @@ mostrar dia y mes en español.
 = Admins/Desarrolladores/Diseñadores =
  Este plugin trae consigo funciones que usualemente necesitamos en todo proyecto , aplicación o blog y que nos sirve de mucha ayuda.
 
-= Donate =
-Disfrutas usando *WP Utils*? Por favor considerar[hacer una donación](http://renzotejada.com/donar) para apoyar el desarrollo continuo del proyecto.
 
 
 == Installation ==
@@ -38,6 +35,9 @@ WP Utils requiere 5.3 a más
  
 
 == Changelog ==
+
+= 0.1.6 =
+Actualizando la version de wordpress
 
 = 0.1.5 =
 Actualizando descripción y agregando nuevo metodo addHttps
