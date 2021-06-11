@@ -3,7 +3,7 @@
 /**
  *
  * @link              https://renzotejada.com/
- * @package           WP Utils
+ * @package           Utils para WooCommerce y WordPress
  *
  * @wordpress-plugin
  * Plugin Name:       Utils para WooCommerce y WordPress

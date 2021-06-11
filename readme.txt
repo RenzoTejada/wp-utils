@@ -1,23 +1,35 @@
-=== WP Utils ===
+=== Utils para WooCommerce y WordPress ===
 Contributors: renzotejada
 Tags: utils, cut, cortar, texto, day, month, mes, dia, dominio, http, wp, wordpress
 Requires at least: 5.2
-Tested up to: 5.5.3
+Tested up to: 5.7.2
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-WP Utils - Funciones de apoyo - Utilitarios, funciones básicas para todo desarrollador, como cortar texto palabras, agregar protocolo (http),
-mostrar dia y mes en español
+Utils para WooCommerce y WordPress - Support functions - Utilities, essential functions.
 
 == Description ==
 
-> WP Utils - Funciones de apoyo - Utilitarios, funciones básicas para todo desarrollador, como cortar texto palabras, agregar protocolo (http),
-mostrar dia y mes en español.      
+> Utils para WooCommerce y WordPress - Support functions - Utilities, essential functions.
 
-= Admins/Desarrolladores/Diseñadores =
- Este plugin trae consigo funciones que usualemente necesitamos en todo proyecto , aplicación o blog y que nos sirve de mucha ayuda.
+**Clean up WordPress Header Section**
 
+&#9989; Disable XML-RPC RSD link from WordPress Header
+
+&#9989; Remove WordPress version number
+
+&#9989; Remove wlwmanifest link
+
+&#9989; Remove shortlink
+
+&#9989; Disable Link header for the REST API
+
+&#9989; Remove oEmbed discovery links
+
+
+= Admins/Developers/Designers =
+This plugin brings with it functions that we usually need in any project, application or blog and that is very helpful.
 
 
 == Installation ==
@@ -27,7 +39,6 @@ mostrar dia y mes en español.
 3. Haga clic en el enlace wp-utils en el menú principal
 4. Echa un vistazo a la ayuda haciendo clic en el icono de ayuda y crear su primer paquete.
 
-WP Utils requiere 5.3 a más
 
 == Screenshots ==
  
@@ -35,6 +46,15 @@ WP Utils requiere 5.3 a más
  
 
 == Changelog ==
+
+= 2.0 (11/06/2021) =
+Nueva versión de utils con mas funciones para wordpress y woocommerce
+Deshabilitar el enlace XML-RPC RSD del encabezado de WordPress
+Eliminar el número de versión de WordPress
+Eliminar el enlace wlwmanifest
+Eliminar enlace corto
+Deshabilitar el encabezado de enlace para la API REST
+Eliminar enlaces de descubrimiento de oEmbed
 
 = 0.1.6 =
 Actualizando la version de wordpress
