@@ -1,17 +1,17 @@
-=== Utils para Woo y WordPress ===
+=== Utils para WooCommerce y WordPress ===
 Contributors: renzotejada
 Tags: utils, cut, cortar, texto, day, month, mes, dia, dominio, http, wp, wordpress
 Requires at least: 5.2
 Tested up to: 5.8
-Stable tag: trunk
+Stable tag: 2.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Utils para Woo y WordPress - Support functions - Utilities, essential functions.
+Utils para WooCommerce y WordPress - Support functions - Utilities, essential functions.
 
 == Description ==
 
-> Utils para Woo y WordPress - Support functions - Utilities, essential functions.
+> Utils para WooCommerce y WordPress - Support functions - Utilities, essential functions.
 
 **Clean up WordPress Header Section**
 
@@ -26,6 +26,33 @@ Utils para Woo y WordPress - Support functions - Utilities, essential functions.
 &#9989; Disable Link header for the REST API
 
 &#9989; Remove oEmbed discovery links
+
+= View more plugins =
+
+For additional functionality, check out our companion plugin, such as:
+
+* [Ubigeo Perú](https://wordpress.org/plugins/ubigeo-peru/)
+* [Libro de Reclamaciones y Quejas](https://wordpress.org/plugins/libro-de-reclamaciones-y-quejas/)
+* [Comprobante de Pago Perú](https://wordpress.org/plugins/comprobante-de-pago-peru/)
+* [Tipo Documento Perú](https://wordpress.org/plugins/tipo-documento-peru/)
+* [Transferencia Bancaria Perú](https://wordpress.org/plugins/transferencia-bancaria-peru/)
+* [Utils para WooCommerce y WordPress](https://wordpress.org/plugins/wp-utils/)
+* [Multi Link in Bio](https://wordpress.org/plugins/multi-link-in-bio/)
+* [Display Price Free](https://wordpress.org/plugins/display-price-free/)
+
+= View more plugins PREMIUM =
+
+* [Costo de envío de Ubigeo Perú](https://renzotejada.com/plugin/costo-de-envio-de-ubigeo-de-peru-para-woocommerce/)
+* [Libro de Reclamaciones y Quejas PRO](https://renzotejada.com/plugin/libro-de-reclamaciones-y-quejas-pro/)
+* [WooYape para WooCommerce](https://renzotejada.com/plugin/wooyape-para-woocommerce/)
+* [WooLukita para WooCommerce](https://renzotejada.com/plugin/woolukita-para-woocommerce/)
+* [WooPlin para WooCommerce](https://renzotejada.com/plugin/wooplin-para-woocommerce/)
+* [WooTunki para WooCommerce](https://renzotejada.com/plugin/wootunki-para-woocommerce/)
+* [WooBilletera para WooCommerce](https://renzotejada.com/plugin/woobilletera-para-woocommerce/)
+
+
+Visit our [plugins overview page](https://renzotejada.com/categoria-producto/plugins/) for more information.
+
 
 
 = Admins/Developers/Designers =
@@ -47,8 +74,13 @@ This plugin brings with it functions that we usually need in any project, applic
 
 == Changelog ==
 
-= 2.1 (24/08/2021) =
-Cambiando titulo por temas de derechos con WooCommerce.
+= 2.2 (24/08/2021) =
+Fix: validando versión WC 5.6
+Fix: actualizando banner , por derecho de marca de WooCommerce.
+
+= 2.1 (14/06/2021) =
+Fix: validando versión WC 5.4.1.
+Fix: agrega links de plugins premiums y free.
 
 = 2.0 (11/06/2021) =
 Nueva versión de utils con mas funciones para wordpress y woocommerce

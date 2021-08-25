@@ -3,13 +3,13 @@
 /**
  *
  * @link              https://renzotejada.com/
- * @package           Utils para Woo y WordPress
+ * @package           Utils para WooCommerce y WordPress
  *
  * @wordpress-plugin
- * Plugin Name:       Utils para Woo y WordPress
- * Plugin URI:        https://renzotejada.com/wp-utils/
+ * Plugin Name:       Utils para WooCommerce y WordPress
+ * Plugin URI:        https://renzotejada.com/utils-para-woocommerce-y-wordpress/
  * Description:       Support functions - Utilities, essential functions.
- * Version:           2.1
+ * Version:           2.2
  * Author:            Renzo Tejada
  * Author URI:        https://renzotejada.com/
  * License:           GNU General Public License v3.0
