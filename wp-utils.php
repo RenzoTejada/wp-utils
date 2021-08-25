@@ -3,20 +3,20 @@
 /**
  *
  * @link              https://renzotejada.com/
- * @package           Utils para WooCommerce y WordPress
+ * @package           Utils para Woo y WordPress
  *
  * @wordpress-plugin
- * Plugin Name:       Utils para WooCommerce y WordPress
+ * Plugin Name:       Utils para Woo y WordPress
  * Plugin URI:        https://renzotejada.com/wp-utils/
  * Description:       Support functions - Utilities, essential functions.
- * Version:           2.0
+ * Version:           2.1
  * Author:            Renzo Tejada
  * Author URI:        https://renzotejada.com/
  * License:           GNU General Public License v3.0
  * License URI:       http://www.gnu.org/licenses/gpl-3.0.html
  * Text Domain:       rt-wp-utils
  * Domain Path:       /language
- * WC tested up to:   5.4.1
+ * WC tested up to:   5.6.0
  * WC requires at least: 2.6
  */
 if (!defined('ABSPATH')) {

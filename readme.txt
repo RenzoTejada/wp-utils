@@ -1,17 +1,17 @@
-=== Utils para WooCommerce y WordPress ===
+=== Utils para Woo y WordPress ===
 Contributors: renzotejada
 Tags: utils, cut, cortar, texto, day, month, mes, dia, dominio, http, wp, wordpress
 Requires at least: 5.2
-Tested up to: 5.7.2
+Tested up to: 5.8
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Utils para WooCommerce y WordPress - Support functions - Utilities, essential functions.
+Utils para Woo y WordPress - Support functions - Utilities, essential functions.
 
 == Description ==
 
-> Utils para WooCommerce y WordPress - Support functions - Utilities, essential functions.
+> Utils para Woo y WordPress - Support functions - Utilities, essential functions.
 
 **Clean up WordPress Header Section**
 
@@ -46,6 +46,9 @@ This plugin brings with it functions that we usually need in any project, applic
  
 
 == Changelog ==
+
+= 2.1 (24/08/2021) =
+Cambiando titulo por temas de derechos con WooCommerce.
 
 = 2.0 (11/06/2021) =
 Nueva versión de utils con mas funciones para wordpress y woocommerce
