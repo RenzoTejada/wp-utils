@@ -3,13 +3,13 @@ if (!defined('ABSPATH')) {
     exit;
 } // Exit if accessed directly
 
-function limit_words($string, $word_limit)
+function rt_utils_limit_words($string, $word_limit)
 {
-    $words = explode(' ', $string);
-    return implode(' ', array_slice($words, 0, $word_limit));
+    $words = esc_html(explode(' ', $string));
+    return esc_html(implode(' ', array_slice($words, 0, $word_limit)));
 }
 
-function getNameDaySpanish($n)
+function rt_utils_getNameDaySpanish($n)
 {
     switch ($n) {
         case 1:
@@ -40,7 +40,7 @@ function getNameDaySpanish($n)
     return $n;
 }
 
-function getNameMonthSpanish($n)
+function rt_utils_getNameMonthSpanish($n)
 {
     switch ($n) {
         case 1:
@@ -86,7 +86,7 @@ function getNameMonthSpanish($n)
     return $n;
 }
 
-function addHttp($url)
+function rt_utils_addHttp($url)
 {
     if (filter_var($url, FILTER_VALIDATE_URL) === false) {
         $url = "http://" . $url;
@@ -95,7 +95,7 @@ function addHttp($url)
     return $url;
 }
 
-function addHttps($url)
+function rt_utils_addHttps($url)
 {
     if (filter_var($url, FILTER_VALIDATE_URL) === false) {
         $url = "https://" . $url;

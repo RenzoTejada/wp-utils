@@ -74,13 +74,13 @@ function rt_utils_submenu_settings_docs()
         <br>
         <div id="dashboard_right_now" class="postbox">
             <div class="inside">
-                <h3 class="main"><?php _e('Functions limit_words', 'rt-wp-utils'); ?> </h3>
+                <h3 class="main"><?php _e('Functions rt_utils_limit_words', 'rt-wp-utils'); ?> </h3>
                 <div class="main">
                     <ul>
-                        <li><?php _e('limit_words', 'rt-wp-utils'); ?>
+                        <li><?php _e('rt_utils_limit_words', 'rt-wp-utils'); ?>
                             : <?php _e('Cuts a text string into a certain number of words number of words', 'rt-wp-utils'); ?>
                         </li>
-                        <li>Ej: <code>&lt;?php echo limit_words($string, $int); ?></code>
+                        <li>Ej: <code> esc_html(rt_utils_limit_words($string, $int))</code>
                         </li>
                         <li>$string : <?php _e('text string ', 'rt-wp-utils'); ?>(ej: get_the_content())</li>
                         <li>$int :<?php _e('number of words to be displayed (whole number)', 'rt-wp-utils'); ?></li>
@@ -90,12 +90,12 @@ function rt_utils_submenu_settings_docs()
         </div>
         <div id="dashboard_right_now" class="postbox">
             <div class="inside">
-                <h3 class="main"><?php _e('Functions getNameDaySpanish', 'rt-wp-utils'); ?> </h3>
+                <h3 class="main"><?php _e('Functions rt_utils_getNameDaySpanish', 'rt-wp-utils'); ?> </h3>
                 <div class="main">
                     <ul>
-                        <li><?php _e('getNameDaySpanish', 'rt-wp-utils'); ?>
+                        <li><?php _e('rt_utils_getNameDaySpanish', 'rt-wp-utils'); ?>
                             : <?php _e('Returns the name of the day in Spanish', 'rt-wp-utils'); ?> </li>
-                        <li>Ej: <code>&lt;?php echo getNameDaySpanish(date('d')); ?></code></li>
+                        <li>Ej: <code> esc_html(rt_utils_getNameDaySpanish(date('d'))); </code></li>
                         <li>$d : <?php _e('DATE OF DAY', 'rt-wp-utils'); ?> => date('d')</li>
                         <li></li>
                     </ul>
@@ -104,12 +104,12 @@ function rt_utils_submenu_settings_docs()
         </div>
         <div id="dashboard_right_now" class="postbox">
             <div class="inside">
-                <h3 class="main"><?php _e('Functions getNameMonthSpanish', 'rt-wp-utils'); ?> </h3>
+                <h3 class="main"><?php _e('Functions rt_utils_getNameMonthSpanish', 'rt-wp-utils'); ?> </h3>
                 <div class="main">
                     <ul>
-                        <li><?php _e('getNameMonthSpanish', 'rt-wp-utils'); ?>
+                        <li><?php _e('rt_utils_getNameMonthSpanish', 'rt-wp-utils'); ?>
                             : <?php _e('Returns the name of the month in Spanish', 'rt-wp-utils'); ?> </li>
-                        <li>Ej: <code>&lt;?php echo getNameMonthSpanish(date('m')); ?></code></li>
+                        <li>Ej: <code> esc_html(rt_utils_getNameMonthSpanish(date('m')));</code></li>
                         <li>$m : <?php _e('number of the month', 'rt-wp-utils'); ?> => date('m')</li>
                         <li></li>
                     </ul>
@@ -118,12 +118,12 @@ function rt_utils_submenu_settings_docs()
         </div>
         <div id="dashboard_right_now" class="postbox">
             <div class="inside">
-                <h3 class="main"><?php _e('Functions addHttp', 'rt-wp-utils'); ?></h3>
+                <h3 class="main"><?php _e('Functions rt_utils_addHttp', 'rt-wp-utils'); ?></h3>
                 <div class="main">
                     <ul>
-                        <li><?php _e('addHttp', 'rt-wp-utils'); ?>
+                        <li><?php _e('rt_utils_addHttp', 'rt-wp-utils'); ?>
                             : <?php _e('Add http to domains or urls', 'rt-wp-utils'); ?></li>
-                        <li>Ej: <code>&lt;?php echo addHttp($url); ?></code></li>
+                        <li>Ej: <code> esc_html(rt_utils_addHttp($url)); </code></li>
                         <li>$url : <?php _e('url without protocol (http)', 'rt-wp-utils'); ?> </li>
                         <li></li>
                     </ul>
@@ -132,30 +132,14 @@ function rt_utils_submenu_settings_docs()
         </div>
         <div id="dashboard_right_now" class="postbox">
             <div class="inside">
-                <h3 class="main"><?php _e('Functions addHttps', 'rt-wp-utils'); ?> </h3>
+                <h3 class="main"><?php _e('Functions rt_utils_addHttps', 'rt-wp-utils'); ?> </h3>
                 <div class="main">
                     <ul>
-                        <li><?php _e('addHttps', 'rt-wp-utils'); ?>
+                        <li><?php _e('rt_utils_addHttps', 'rt-wp-utils'); ?>
                             : <?php _e('Adding https to domains or urls', 'rt-wp-utils'); ?> </li>
-                        <li>Ej: <code>&lt;?php echo addHttps(url); ?></code></li>
+                        <li>Ej: <code> esc_html(rt_utils_addHttps(url)); </code></li>
                         <li>$url : <?php _e('url with protocol (https)', 'rt-wp-utils'); ?> </li>
                         <li></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div id="dashboard_right_now" class="postbox">
-            <div class="inside">
-                <h3 class="main"><?php _e('Functions cortarTexto', 'rt-wp-utils'); ?> </h3>
-                <div class="main">
-                    <ul>
-                        <li><?php _e('cortarTexto', 'rt-wp-utils'); ?>
-                            : <?php _e('Cuts a text string into a certain number of characters.', 'rt-wp-utils'); ?> </li>
-                        <li>Ej: <code>&lt;?php echo cortarTexto($txt,$nr,$abrev); ?></code></li>
-                        <li>$txt : <?php _e('text string', 'rt-wp-utils'); ?> / $nr
-                            : <?php _e('number of characters', 'rt-wp-utils'); ?> </li>
-                        <li> $abrev : <?php _e('text to concatenate', 'rt-wp-utils'); ?> ej :
-                            '...' <?php _e('(not obligatory)', 'rt-wp-utils'); ?></li>
                     </ul>
                 </div>
             </div>
