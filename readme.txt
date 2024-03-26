@@ -76,6 +76,10 @@ This plugin brings with it functions that we usually need in any project, applic
 
 == Changelog ==
 
+= 2.9 (26/03/2024) =
+Fix: validando versión WC 8.7.0
+Fix: validando versión WP 6.4.3
+
 = 2.8 (22/03/2024) =
 Fix: validando versión WC 8.7.0
 Fix: validando versión WP 6.4.3
