@@ -2,7 +2,7 @@
 Contributors: renzotejada, drplugins, alexistejada
 Tags: utils, cut, cortar, texto, day, month, mes, dia, dominio, http, wp, wordpress
 Requires at least: 5.2
-Tested up to: 6.4.3
+Tested up to: 6.5
 Stable tag: trunk
 Requires PHP: 5.6
 License: GPLv2 or later
@@ -75,6 +75,10 @@ This plugin brings with it functions that we usually need in any project, applic
  
 
 == Changelog ==
+
+= 3.0 (05/04/2024) =
+Fix: validando versión WC 8.7.0
+Fix: validando versión WP 6.5
 
 = 2.9 (26/03/2024) =
 Fix: validando versión WC 8.7.0
