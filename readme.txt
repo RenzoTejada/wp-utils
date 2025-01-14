@@ -76,6 +76,9 @@ This plugin brings with it functions that we usually need in any project, applic
 
 == Changelog ==
 
+= 3.1 (14/01/2025) =
+Fix: Test envio deploy v.3.1 con git actions
+
 = 3.0 (14/01/2025) =
 Fix: validando versión WC 9.5.2
 Fix: validando versión WP 6.7.1
