@@ -11,3 +11,9 @@ wp-content/cache/
 wp-content/upgrade/
 wp-content/uploads/
 wp-content/wp-cache-config.php
+/.wordpress-org
+/.git
+/.github
+/node_modules
+.distignore
+.gitignore
