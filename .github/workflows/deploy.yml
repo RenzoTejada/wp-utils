@@ -1,0 +1,27 @@
+name: Deploy to WordPress SVN
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup SVN
+        run: sudo apt-get install subversion
+
+      - name: Commit to SVN
+        env:
+          SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
+          SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
+        run: |
+          svn checkout https://plugins.svn.wordpress.org/tu-plugin svn-dir
+          rsync -av --delete --exclude='.git*' . svn-dir/trunk/
+          cd svn-dir
+          svn add --force trunk/*
+          svn commit -m "Automated commit for version ${GITHUB_REF#refs/tags/}"
