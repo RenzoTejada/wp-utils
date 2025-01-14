@@ -20,7 +20,7 @@ jobs:
           SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
           SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
         run: |
-          svn checkout https://plugins.svn.wordpress.org/tu-plugin svn-dir
+          svn checkout https://plugins.svn.wordpress.org/wp-utils svn-dir
           rsync -av --delete --exclude='.git*' . svn-dir/trunk/
           cd svn-dir
           svn add --force trunk/*

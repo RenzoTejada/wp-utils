@@ -1,11 +1,11 @@
 === Utils para WooCommerce y WordPress ===
 Contributors: renzotejada, huakotech, alexistejada
-Tags: utils, cut, cortar, texto, day, month, mes, dia, dominio, http, wp, wordpress
+Tags: utils, cut, cortar, texto, day
 Requires at least: 5.2
-Tested up to: 6.7
+Tested up to: 6.7.1
 Stable tag: trunk
-Requires PHP: 5.6
-License: GPLv2 or later
+Requires PHP: 7.4
+License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 Utils para WooCommerce y WordPress - Support functions - Utilities, essential functions.
@@ -75,6 +75,10 @@ This plugin brings with it functions that we usually need in any project, applic
  
 
 == Changelog ==
+
+= 3.0 (14/01/2025) =
+Fix: validando versión WC 9.5.2
+Fix: validando versión WP 6.7.1
 
 = 2.9 (15/11/2024) =
 Fix: validando versión WC 9.4.1

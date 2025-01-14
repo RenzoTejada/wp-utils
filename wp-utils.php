@@ -9,14 +9,16 @@
  * Plugin Name:       Utils para WooCommerce y WordPress
  * Plugin URI:        https://renzotejada.com/utils-para-woocommerce-y-wordpress/
  * Description:       Support functions - Utilities, essential functions.
- * Version:           2.9
+ * Version:           3.0
  * Author:            Renzo Tejada
  * Author URI:        https://renzotejada.com/
- * License:           GNU General Public License v3.0
- * License URI:       http://www.gnu.org/licenses/gpl-3.0.html
+ * License:           GPL-2.0-or-later
+ * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       rt-wp-utils
  * Domain Path:       /language
- * WC tested up to:   9.4.1
+ * Requires at least: 5.6
+ * Requires PHP:      7.4
+ * WC tested up to:   9.5.2
  * WC requires at least: 2.6
  */
 if (!defined('ABSPATH')) {
