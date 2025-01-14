@@ -76,6 +76,9 @@ This plugin brings with it functions that we usually need in any project, applic
 
 == Changelog ==
 
+= 3.2 (14/01/2025) =
+Fix: Test envio deploy v.3.2 con git actions
+
 = 3.1 (14/01/2025) =
 Fix: Test envio deploy v.3.1 con git actions
 
