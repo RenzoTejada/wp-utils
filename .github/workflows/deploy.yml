@@ -5,22 +5,13 @@ on:
     - "v*"
 
 jobs:
-  tag:
-    name: New tag
+  deploy:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-    - name: Build # Remove or modify this step as needed
-      run: |
-        npm install
-        npm run build
-    - name: WordPress Plugin Deploy
-      uses: 10up/action-wordpress-plugin-deploy@stable
-      env:
-        SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
-        SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
-        SLUG: wp-utils
-        SVN_IGNORE: |
-              .git
-              .github
-              .wordpress-org
+      - uses: actions/checkout@master
+      - name: WordPress Plugin Deploy
+        uses: nk-o/action-wordpress-plugin-deploy@master
+        env:
+          SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
+          SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
+          SLUG: wp-utils
