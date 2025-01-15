@@ -76,6 +76,9 @@ This plugin brings with it functions that we usually need in any project, applic
 
 == Changelog ==
 
+= 4.6 (14/01/2025) =
+Fix: remove dir and files v6
+
 = 4.5 (14/01/2025) =
 Fix: remove dir and files v5
 
