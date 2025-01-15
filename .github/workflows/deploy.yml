@@ -16,6 +16,6 @@ jobs:
           SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
           SLUG: wp-utils
           SVN_IGNORE: |
-          .git
-          .github
-          .wordpress-org
+              .git
+              .github
+              .wordpress-org
