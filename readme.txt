@@ -3,7 +3,7 @@ Contributors: renzotejada, huakotech, alexistejada
 Tags: utils, cut, cortar, texto, day
 Requires at least: 5.2
 Tested up to: 6.7.1
-Stable tag: trunk
+Stable tag: 5.4
 Requires PHP: 7.4
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -75,6 +75,15 @@ This plugin brings with it functions that we usually need in any project, applic
  
 
 == Changelog ==
+
+= 5.4 (15/01/2025) =
+Fix: remove dir and files v14
+
+= 5.3 (15/01/2025) =
+Fix: remove dir and files v13
+
+= 5.2 (15/01/2025) =
+Fix: remove dir and files v12
 
 = 5.1 (15/01/2025) =
 Fix: remove dir and files v11
