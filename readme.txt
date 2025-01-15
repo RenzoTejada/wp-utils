@@ -76,6 +76,9 @@ This plugin brings with it functions that we usually need in any project, applic
 
 == Changelog ==
 
+= 4.1 (14/01/2025) =
+Fix: remove dir and files
+
 = 4.0 (14/01/2025) =
 Fix: Test envio deploy v.4.0 con git actions
 
