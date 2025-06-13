@@ -158,7 +158,7 @@ function rt_utils_submenu_settings_settings()
         <?php settings_fields('utils_settings_group'); ?>
         <?php do_settings_sections('utils_settings_group'); ?>
 
-        <table class="form-table">
+        <table class="form-table" aria-describedby="titledesc">
             <tbody>
             <tr valign="top">
                 <th scope="row" class="titledesc">
