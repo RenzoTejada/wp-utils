@@ -1,6 +1,6 @@
 === Utils para WooCommerce y WordPress ===
 Contributors: renzotejada, huakotech, alexistejada
-Tags: utils, cut, cortar, texto, day
+Tags: utils, cut, cortar, texto
 Requires at least: 5.2
 Tested up to: 6.8
 Stable tag: 5.4
@@ -75,6 +75,9 @@ This plugin brings with it functions that we usually need in any project, applic
  
 
 == Changelog ==
+
+= 5.6 (13/06/2025) =
+Fix: pruebas de envio con git actions
 
 = 5.5 (13/06/2025) =
 Fix: integracion de plugin check con sonar mejorar codigo
