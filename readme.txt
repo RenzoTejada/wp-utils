@@ -76,6 +76,9 @@ This plugin brings with it functions that we usually need in any project, applic
 
 == Changelog ==
 
+= 5.7 (13/06/2025) =
+Fix: pruebas de envio con git actions v2
+
 = 5.6 (13/06/2025) =
 Fix: pruebas de envio con git actions
 
