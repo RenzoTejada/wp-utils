@@ -45,3 +45,4 @@ jobs:
           SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
           SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
           SLUG: wp-utils
+          EXCLUDE: ".scannerwork/**"
