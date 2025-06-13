@@ -1,15 +1,39 @@
-name: Deploy to WordPress.org
+name: Plugin Check + SonarQube + Deploy WordPress
+
 on:
   push:
     tags:
-    - "v*"
+      - "v*"
 
 jobs:
-  deploy:
+  check-sonar-deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@master
-      - name: WordPress Plugin Deploy
+      - name: Checkout plugin code
+        uses: actions/checkout@v4
+
+      - name: Set up PHP 8.2
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+
+      - name: Run WordPress Plugin Check
+        run: |
+          curl -sSLo check https://raw.githubusercontent.com/pluginkollektiv/plugincheck/main/check
+          chmod +x check
+          ./check .
+
+      - name: SonarQube Scanner
+        uses: sonarsource/sonarqube-scan-action@v2.0.2
+        with:
+          projectBaseDir: .
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+
+      - name: Deploy to WordPress.org
+        if: success()
         uses: nk-o/action-wordpress-plugin-deploy@master
         env:
           SVN_USERNAME: ${{ secrets.SVN_USERNAME }}

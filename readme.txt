@@ -2,9 +2,9 @@
 Contributors: renzotejada, huakotech, alexistejada
 Tags: utils, cut, cortar, texto, day
 Requires at least: 5.2
-Tested up to: 6.7.1
+Tested up to: 6.8
 Stable tag: 5.4
-Requires PHP: 7.4
+Requires PHP: 8.2
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -75,6 +75,9 @@ This plugin brings with it functions that we usually need in any project, applic
  
 
 == Changelog ==
+
+= 5.5 (13/06/2025) =
+Fix: integracion de plugin check con sonar mejorar codigo
 
 = 5.4 (15/01/2025) =
 Fix: remove dir and files v14
