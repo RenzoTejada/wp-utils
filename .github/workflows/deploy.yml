@@ -33,7 +33,7 @@ jobs:
           projectBaseDir: .
           args: >
             -Dsonar.projectKey=wp-utils
-            -Dsonar.projectName=WP Utils
+            -Dsonar.projectName="WP Utils"
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
