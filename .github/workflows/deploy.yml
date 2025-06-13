@@ -31,9 +31,9 @@ jobs:
         uses: sonarsource/sonarqube-scan-action@v2.0.2
         with:
           projectBaseDir: .
-          args: >
-            -Dsonar.projectKey=wp-utils
-            -Dsonar.projectName="WP Utils"
+          args: |
+              -Dsonar.projectKey=wp-utils
+              -Dsonar.projectName=WP_Utils
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
