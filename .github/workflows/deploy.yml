@@ -40,8 +40,17 @@ jobs:
       - name: Prepare clean plugin folder
         run: |
           mkdir plugin-dist
-          rsync -av --exclude='.git*' --exclude='.github' --exclude='.scannerwork' --exclude='tests' --exclude='composer.*' --exclude='node_modules' --exclude='package*' ./ plugin-dist/
-
+          rsync -av \
+            --exclude='.git*' \
+            --exclude='.github' \
+            --exclude='.scannerwork' \
+            --exclude='plugin-dist' \
+            --exclude='tests' \
+            --exclude='composer.*' \
+            --exclude='node_modules' \
+            --exclude='package*' \
+            ./ plugin-dist/
+            
       - name: Deploy to WordPress.org
         uses: nk-o/action-wordpress-plugin-deploy@master
         with:
