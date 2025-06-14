@@ -50,6 +50,7 @@ jobs:
             --exclude='node_modules' \
             --exclude='package*' \
             ./ ./plugin-dist/
+          rm -rf plugin-dist/.scannerwork  # por si acaso quedó algo
 
       - name: Install SVN
         run: sudo apt-get update && sudo apt-get install -y subversion
@@ -64,7 +65,9 @@ jobs:
       - name: Copy clean files to SVN trunk
         run: |
           rm -rf svn/trunk/*
-          cp -R plugin-dist/* svn/trunk/
+          rsync -av \
+            --exclude='.scannerwork' \
+            ./plugin-dist/ svn/trunk/
 
       - name: Deploy to WordPress.org
         uses: nk-o/action-wordpress-plugin-deploy@master
