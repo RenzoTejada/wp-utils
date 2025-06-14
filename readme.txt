@@ -3,7 +3,7 @@ Contributors: renzotejada, huakotech, alexistejada
 Tags: utils, cut, cortar, texto
 Requires at least: 5.2
 Tested up to: 6.8
-Stable tag: 6.2
+Stable tag: 6.3
 Requires PHP: 8.2
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -75,6 +75,9 @@ This plugin brings with it functions that we usually need in any project, applic
  
 
 == Changelog ==
+
+= 6.3 (14/06/2025) =
+Fix: pruebas de envio con git actions v8 e ignorando files scan
 
 = 6.2 (13/06/2025) =
 Fix: pruebas de envio con git actions v7 y corrgiendo bug de sonar

@@ -24,25 +24,29 @@ jobs:
           chmod +x wp-cli.phar
           sudo mv wp-cli.phar /usr/local/bin/wp
           wp --info
-          # Simular verificación checksum como plugin (no WordPress core porque no estamos dentro de un sitio WP)
           echo "✅ WP-CLI instalado. Plugin listo para el escaneo."
 
-      - name: SonarQube Scanner
+      - name: Run SonarQube Scan
         uses: sonarsource/sonarqube-scan-action@v2.0.2
         with:
           projectBaseDir: .
           args: |
-              -Dsonar.projectKey=wp-utils
-              -Dsonar.projectName=WP_Utils
+            -Dsonar.projectKey=wp-utils
+            -Dsonar.projectName=WP_Utils
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
 
+      - name: Prepare clean plugin folder
+        run: |
+          mkdir plugin-dist
+          rsync -av --exclude='.git*' --exclude='.github' --exclude='.scannerwork' --exclude='tests' --exclude='composer.*' --exclude='node_modules' --exclude='package*' ./ plugin-dist/
+
       - name: Deploy to WordPress.org
-        if: success()
         uses: nk-o/action-wordpress-plugin-deploy@master
+        with:
+          plugin-dir: plugin-dist
         env:
           SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
           SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
           SLUG: wp-utils
-          EXCLUDE: ".scannerwork/**"
