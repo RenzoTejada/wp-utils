@@ -37,7 +37,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
 
-      - name: Prepare clean plugin folder
+      - name: Prepare clean plugin-dist folder (exclude .scannerwork and others)
         run: |
           mkdir plugin-dist
           rsync -av \
@@ -49,12 +49,24 @@ jobs:
             --exclude='composer.*' \
             --exclude='node_modules' \
             --exclude='package*' \
-            ./ plugin-dist/
-            
+            ./ ./plugin-dist/
+
+      - name: Checkout WordPress.org SVN repo
+        run: |
+          svn checkout https://plugins.svn.wordpress.org/wp-utils/ svn \
+            --username "${{ secrets.SVN_USERNAME }}" \
+            --password "${{ secrets.SVN_PASSWORD }}" \
+            --non-interactive
+
+      - name: Copy clean files to SVN trunk
+        run: |
+          rm -rf svn/trunk/*
+          cp -R plugin-dist/* svn/trunk/
+
       - name: Deploy to WordPress.org
         uses: nk-o/action-wordpress-plugin-deploy@master
         with:
-          plugin-dir: plugin-dist
+          plugin-dir: svn/trunk
         env:
           SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
           SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
