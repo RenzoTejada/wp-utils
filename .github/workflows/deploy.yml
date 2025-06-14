@@ -51,6 +51,9 @@ jobs:
             --exclude='package*' \
             ./ ./plugin-dist/
 
+      - name: Install SVN
+        run: sudo apt-get update && sudo apt-get install -y subversion
+
       - name: Checkout WordPress.org SVN repo
         run: |
           svn checkout https://plugins.svn.wordpress.org/wp-utils/ svn \
