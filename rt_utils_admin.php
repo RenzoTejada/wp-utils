@@ -35,35 +35,28 @@ function rt_utils_register_settings()
 
 function rt_utils_submenu_settings_callback()
 {
-    if (current_user_can('manage_options')) {
-        ?>
-        <div class="wrap woocommerce">
-            <div style="background-color:#87b43e;">
-            </div>
-            <h1><?php _e('WP Utils', 'rt-wp-utils') ?></h1>
-            <hr>
-            <h2 class="nav-tab-wrapper">
-                <a href="?page=utils_settings" class="nav-tab <?php
-                if ((!isset($_REQUEST['tab']))) {
-                    print " nav-tab-active";
-                } ?>"><?php _e('Docs', 'rt-wp-utils') ?></a>
-                <a href="?page=utils_settings&tab=settings" class="nav-tab <?php
-                if ((isset($_REQUEST['tab']) == 'settings')) {
-                    print " nav-tab-active";
-                } ?>"><?php _e('Settings', 'rt-wp-utils') ?></a>
-
-            </h2>
+    if (!current_user_can('manage_options')) { return; }
+    $tab = isset($_GET['tab']) ? sanitize_key(wp_unslash($_GET['tab'])) : 'settings';
+    if (!in_array($tab, array('settings', 'docs', 'contact'), true)) { $tab = 'settings'; }
+    $base = admin_url('admin.php?page=utils_settings');
+    ?>
+    <div class="wrap rt-utils-wrap">
+        <div class="rt-utils-heading"><div><h1><?php esc_html_e('Utils para WooCommerce y WordPress', 'rt-wp-utils'); ?></h1><p><?php esc_html_e('Configura pequeñas utilidades y consulta las funciones disponibles.', 'rt-wp-utils'); ?></p></div><span class="rt-utils-version">v<?php echo esc_html(Version_RT_WP_Utils); ?></span></div>
+        <nav class="nav-tab-wrapper rt-utils-tabs" aria-label="<?php esc_attr_e('Secciones', 'rt-wp-utils'); ?>">
+            <a class="nav-tab <?php echo $tab === 'settings' ? 'nav-tab-active' : ''; ?>" href="<?php echo esc_url(add_query_arg('tab','settings',$base)); ?>"><?php esc_html_e('Configuración','rt-wp-utils'); ?></a>
+            <a class="nav-tab <?php echo $tab === 'docs' ? 'nav-tab-active' : ''; ?>" href="<?php echo esc_url(add_query_arg('tab','docs',$base)); ?>"><?php esc_html_e('Documentación','rt-wp-utils'); ?></a>
+            <a class="nav-tab <?php echo $tab === 'contact' ? 'nav-tab-active' : ''; ?>" href="<?php echo esc_url(add_query_arg('tab','contact',$base)); ?>"><?php esc_html_e('Contacto','rt-wp-utils'); ?></a>
+        </nav>
+        <div class="rt-utils-content">
             <?php
-            if ((!isset($_REQUEST['tab'])) || ($_REQUEST['tab'] == "home")) {
-                rt_utils_submenu_settings_docs();
-            }
-            if (($_REQUEST['tab'] == "settings")) {
-                rt_utils_submenu_settings_settings();
-            }
+            if ($tab === 'docs') { rt_utils_submenu_settings_docs(); }
+            elseif ($tab === 'contact') { ?>
+              <div class="rt-utils-card"><h2><?php esc_html_e('Ayuda y soporte','rt-wp-utils'); ?></h2><p><?php esc_html_e('Si necesitas una integración o soporte técnico, puedes comunicarte con el desarrollador.', 'rt-wp-utils'); ?></p><a class="button button-primary" href="https://renzotejada.com/contacto/" target="_blank" rel="noopener noreferrer"><?php esc_html_e('Contactar a Renzo Tejada','rt-wp-utils'); ?></a></div>
+            <?php } else { rt_utils_submenu_settings_settings(); }
             ?>
         </div>
-        <?php
-    }
+    </div>
+    <?php
 }
 
 function rt_utils_submenu_settings_docs()
@@ -152,7 +145,7 @@ function rt_utils_submenu_settings_settings()
 {
 
     ?>
-    <h2><?php _e('Setting', 'rt-wp-utils') ?></h2>
+    <div class="rt-utils-card"><h2><?php esc_html_e('Configuración general', 'rt-wp-utils'); ?></h2><p><?php esc_html_e('Activa solo las opciones que necesitas. Los cambios se aplican al guardar.', 'rt-wp-utils'); ?></p>
     <?php settings_errors(); ?>
     <form method="post" action="options.php">
         <?php settings_fields('utils_settings_group'); ?>
@@ -162,7 +155,7 @@ function rt_utils_submenu_settings_settings()
             <tbody>
             <tr valign="top">
                 <th scope="row" class="titledesc">
-                    <label><?php _e('Disable  XML-RPC RSD', 'link-bio') ?></label>
+                    <label><?php esc_html_e('Desactivar enlace RSD de XML-RPC', 'rt-wp-utils'); ?></label>
                 </th>
                 <td class="forminp forminp-checkbox">
                     <input type="checkbox" name="utils_disable_rsd_checkbox" id="utils_disable_rsd_checkbox" value="on"
@@ -171,7 +164,7 @@ function rt_utils_submenu_settings_settings()
             </tr>
             <tr>
                 <th scope="row">
-                    <label><?php _e('Remove WordPress version number', 'link-bio') ?></label>
+                    <label><?php esc_html_e('Ocultar la versión de WordPress', 'rt-wp-utils'); ?></label>
                 </th>
                 <td>
                     <input type="checkbox" name="utils_remove_wp_ver_checkbox" id="utils_remove_wp_ver_checkbox"
@@ -181,7 +174,7 @@ function rt_utils_submenu_settings_settings()
             </tr>
             <tr>
                 <th scope="row">
-                    <label><?php _e('Remove wlwmanifest link', 'link-bio') ?></label>
+                    <label><?php esc_html_e('Eliminar enlace WLW Manifest', 'rt-wp-utils'); ?></label>
                 </th>
                 <td>
                     <input type="checkbox" name="utils_remove_wlwmanifest_checkbox"
@@ -191,7 +184,7 @@ function rt_utils_submenu_settings_settings()
             </tr>
             <tr>
                 <th scope="row">
-                    <label><?php _e('Remove shortlink', 'link-bio') ?></label>
+                    <label><?php esc_html_e('Eliminar enlace corto (shortlink)', 'rt-wp-utils'); ?></label>
                 </th>
                 <td>
                     <input type="checkbox" name="utils_remove_shortlink_checkbox" id="utils_remove_shortlink_checkbox"
@@ -201,7 +194,7 @@ function rt_utils_submenu_settings_settings()
             </tr>
             <tr>
                 <th scope="row">
-                    <label><?php _e('Disable Link header for the REST API', 'link-bio') ?></label>
+                    <label><?php esc_html_e('Eliminar enlace de la API REST en el encabezado', 'rt-wp-utils'); ?></label>
                 </th>
                 <td>
                     <input type="checkbox" name="utils_disable_api_checkbox" id="utils_disable_api_checkbox" value="on"
@@ -210,7 +203,7 @@ function rt_utils_submenu_settings_settings()
             </tr>
             <tr>
                 <th scope="row">
-                    <label><?php _e('Remove oEmbed discovery links', 'link-bio') ?></label>
+                    <label><?php esc_html_e('Eliminar enlaces de descubrimiento oEmbed', 'rt-wp-utils'); ?></label>
                 </th>
                 <td>
                     <input type="checkbox" name="utils_remove_discore_links_checkbox"
@@ -221,9 +214,9 @@ function rt_utils_submenu_settings_settings()
             </tbody>
         </table>
         <p class="submit">
-            <?php submit_button(__('Save Changes', 'rt-wp-utils')); ?>
+            <?php submit_button(__('Guardar cambios', 'rt-wp-utils')); ?>
 
         </p>
-    </form>
+    </form></div>
     <?php
 }

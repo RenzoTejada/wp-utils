@@ -1,0 +1,22 @@
+/* Scoped exclusively to the Utils admin page. */
+.rt-utils-wrap{max-width:1200px;margin:20px 20px 40px 0;color:#17212b}
+.rt-utils-heading{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:12px;padding:22px 26px;background:#fff;border:1px solid #dfe5e9;border-radius:12px}
+.rt-utils-heading h1{font-size:24px;font-weight:700;margin:0 0 6px}
+.rt-utils-heading p{color:#65717b;margin:0}
+.rt-utils-version{border:0;padding:7px 12px;border-radius:999px;background:#ecf8ef;color:#256234;font-weight:600;white-space:nowrap}
+.rt-utils-tabs{margin:0!important;padding:0 0 0 4px!important;border-bottom:1px solid #d7dde1!important}
+.rt-utils-tabs .nav-tab{border-radius:8px 8px 0 0;padding:11px 20px;margin-left:0;margin-right:6px;font-weight:600}
+.rt-utils-tabs .nav-tab-active{background:#fff;border-bottom:3px solid #52ad62;color:#163a21}
+.rt-utils-content{margin-top:18px}
+.rt-utils-card{background:#fff;border:1px solid #dfe5e9;border-radius:12px;padding:24px 28px;box-shadow:0 2px 12px rgba(20,36,28,.03)}
+.rt-utils-card h2{font-size:20px;margin:0 0 8px}.rt-utils-card>p{color:#65717b;margin:0 0 20px}
+.rt-utils-card .form-table{margin:18px 0 12px;border-collapse:collapse}
+.rt-utils-card .form-table tr{border-bottom:1px solid #edf0f2}
+.rt-utils-card .form-table th{width:340px;padding:20px 20px 20px 0;vertical-align:middle}
+.rt-utils-card .form-table td{padding:20px 16px;vertical-align:middle}
+.rt-utils-card .form-table input[type=checkbox]{width:20px;height:20px;border-radius:5px}
+.rt-utils-card p.submit{margin:15px 0 0;padding-bottom:0}
+.rt-utils-card p.submit .button{min-height:38px;padding:3px 20px}
+.rt-utils-wrap .postbox{border-radius:10px;border-color:#e0e5e8;box-shadow:none;margin:12px 0}
+.rt-utils-wrap .postbox .inside{padding:16px 20px}
+@media(max-width:782px){.rt-utils-heading{padding:18px;align-items:flex-start}.rt-utils-wrap{margin-right:10px}.rt-utils-card{padding:18px}.rt-utils-card .form-table th,.rt-utils-card .form-table td{display:block;width:auto;padding:12px 0}.rt-utils-heading h1{font-size:21px}}

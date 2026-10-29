@@ -9,17 +9,18 @@
  * Plugin Name:       Utils para WooCommerce y WordPress
  * Plugin URI:        https://renzotejada.com/utils-para-woocommerce-y-wordpress/
  * Description:       Support functions - Utilities, essential functions.
- * Version:           7.1
+ * Version:           7.2.2
  * Author:            Renzo Tejada
  * Author URI:        https://renzotejada.com/
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       rt-wp-utils
  * Domain Path:       /language
- * Requires at least: 5.6
+ * Requires at least: 6.8
  * Requires PHP:      8.2
- * WC tested up to:   9.9.3
- * WC requires at least: 2.6
+ * Tested up to:      7.1.4
+ * WC tested up to:   11.2.1
+ * WC requires at least: 8.2
  */
 if (!defined('ABSPATH')) {
     exit;
@@ -81,3 +82,10 @@ require_once dirname(__FILE__) . "/rt_utils_lib.php";
  * ADMIN
  */
 require_once dirname(__FILE__) . "/rt_utils_admin.php";
+
+// Load scoped panel assets only on Utils settings.
+add_action('admin_enqueue_scripts', function () {
+    $page = isset($_GET['page']) ? sanitize_key(wp_unslash($_GET['page'])) : '';
+    if ('utils_settings' !== $page) { return; }
+    wp_enqueue_style('rt-utils-admin', plugin_dir_url(__FILE__) . 'assets/admin.css', array(), Version_RT_WP_Utils);
+});

@@ -1,16 +1,21 @@
 === Utils para WooCommerce y WordPress ===
 Contributors: renzotejada, huakotech, alexistejada
 Tags: utils, cut, cortar, texto
-Requires at least: 5.2
-Tested up to: 6.8
-Stable tag: 7.1
+Requires at least: 6.8
+Tested up to: 7.1.4
+Stable tag: 7.2.2
 Requires PHP: 8.2
+WC requires at least: 8.2
+WC tested up to: 11.2.1
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 Utils para WooCommerce y WordPress - Support functions - Utilities, essential functions.
 
 == Description ==
+
+Herramientas para limpiar enlaces innecesarios del encabezado de WordPress y funciones auxiliares para desarrolladores. Las opciones permanecen desactivadas hasta que el administrador las habilita. No modifica los datos de pedidos.
+
 
 > Utils para WooCommerce y WordPress - Support functions - Utilities, essential functions.
 
@@ -75,6 +80,28 @@ This plugin brings with it functions that we usually need in any project, applic
  
 
 == Changelog ==
+
+= 7.2.2 =
+* Eliminado el banner promocional del panel de ajustes.
+* Encabezado compacto con título, descripción y versión.
+* Pestañas y tarjeta de configuración con estilo sencillo y consistente.
+* Sin cambios en las funciones ni claves de las opciones guardadas.
+
+
+= 7.2.1 =
+* Rediseñado el banner del panel de ajustes en proporción horizontal compacta para evitar recortes.
+* Mejorada la adaptación del encabezado a diferentes anchos de pantalla.
+* Etiquetas de las seis opciones de configuración traducidas y aclaradas en español.
+* No se alteran las claves de configuración ni las funciones existentes.
+
+
+= 7.2 =
+* Panel administrativo rediseñado con pestañas Configuración, Documentación y Contacto.
+* Banner renovado sin el logotipo de WooCommerce.
+* Corrección de rt_utils_limit_words para PHP moderno, conservando su interfaz de llamada.
+* Conservación de las opciones existentes durante la actualización.
+* Actualización de metadatos para WP 7.1.4 y WC 11.2.1 como versiones objetivo; pendiente de pruebas funcionales en estas versiones.
+
 
 = 7.1 (14/06/2025) =
 Fix: pruebas de envio con git actions v16

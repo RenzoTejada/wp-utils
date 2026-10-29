@@ -9,11 +9,4 @@
 node_modules
 *.log
 *.zip
-vendor
-composer.*
-package*.json
-phpcs.xml
-phpunit.xml
-.scannerwork
-plugin-dist
-tests
+*.orig

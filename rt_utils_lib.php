@@ -5,8 +5,9 @@ if (!defined('ABSPATH')) {
 
 function rt_utils_limit_words($string, $word_limit)
 {
-    $words = esc_html(explode(' ', $string));
-    return esc_html(implode(' ', array_slice($words, 0, $word_limit)));
+    $words = preg_split('/\s+/u', trim(wp_strip_all_tags((string) $string)), -1, PREG_SPLIT_NO_EMPTY);
+    if (!is_array($words)) { return ''; }
+    return esc_html(implode(' ', array_slice($words, 0, max(0, (int) $word_limit))));
 }
 
 function rt_utils_getNameDaySpanish($n)
